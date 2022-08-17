@@ -254,7 +254,7 @@ docker-compose -f docker-compose-replicaset.yml up -d
 
 
 # reference
-- Atthavit Wannasakwong
+- Atthavit Wannasakwong (ขออนุญาติมา ณ ที่นี้ด้วย)
 - https://stackoverflow.com/questions/61486024/mongo-container-with-a-replica-set-with-only-one-node-in-docker-compose
 - https://www.mongodb.com/docs/manual/reference/method/rs.initiate/
 - https://blog.me-idea.in.th/mongodb-docker-compose-up-%E0%B8%9B%E0%B8%B8%E0%B9%8A%E0%B8%9A%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-mongo-database-%E0%B8%9B%E0%B8%B1%E0%B9%8A%E0%B8%9A-d27004a9fd78
