@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  replica-set-git:
+    image : mongo:5.0
+    container_name: replica-set-git
+    hostname: replica-set-git
+    restart: on-failure
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MONGO_INITDB_ROOT_USERNAME=usermongo
+      - MONGO_INITDB_ROOT_PASSWORD=passmongo
+      - MONGO_REPLICA_SET_NAME=replicaset1
+    volumes:
+      - ./db-replica:/data/db
+      - ./keyfile:/opt/keyfile/keyfile
+    ports:
+      - 27081:27081
+    command: "--bind_ip_all --keyFile /opt/keyfile/keyfile --replSet replicaset1 --port 27081"
+
